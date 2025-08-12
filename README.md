@@ -1,9 +1,9 @@
-We Work Only Detok , Not Only Tok Detok
+Tahap Pertama Install Script (vps akan otomatis reboot setelah selesai)
 
 ```
 apt update -y && apt upgrade -y --fix-missing && apt install -y xxd bzip2 wget curl sudo build-essential bsdmainutils screen dos2unix && update-grub && apt dist-upgrade -y && sleep 2 && reboot
 ```
-
+Tahap Kedua Install Script
 ```
 screen -S setup-session bash -c "wget -q https://raw.githubusercontent.com/scripspyx/project/main/install.sh && chmod +x install.sh && ./install.sh; read -p 'Tekan enter untuk keluar...'"
 ```
